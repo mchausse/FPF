@@ -29,7 +29,7 @@
 		$listeItem=$listeCat->current();
 		$item=$listeItem->getNom();
 		$idCat=$listeItem->getId();
-		$res=$dDao->findTotalMontant($idCompte,$idCat);
+		$res=$dDao->findTotalMontantSequence($idCompte,$idCat,'annee');
 		if($row=$res->fetch(PDO::FETCH_OBJ))$totDep=$row->montantTot;
 		?>
 		<script>
@@ -108,7 +108,7 @@
 			}]
 		},
 		options: {
-			title:{display:true, text:'Revenue 'new Date().getFullYear(), fontSize:25,fontColor:'#FFFFE0'},
+			title:{display:true, text:'Revenue '+new Date().getFullYear(), fontSize:25,fontColor:'#FFFFE0'},
 			legend:{
 				display:true, position:'bottom',
 				labels:{fontColor:'#FFFFE0'}
