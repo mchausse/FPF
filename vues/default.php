@@ -86,7 +86,7 @@
 			}]
 		},
 		options: {
-			title:{display:true, text:'Dépense 2018', fontSize:25,fontColor:'#FFFFE0'},
+			title:{display:true, text:'Dépense '+new Date().getFullYear(), fontSize:25,fontColor:'#FFFFE0'},
 			legend:{
 				display:true, position:'bottom',
 				labels:{fontColor:'#FFFFE0'}
@@ -108,7 +108,7 @@
 			}]
 		},
 		options: {
-			title:{display:true, text:'Revenue 2018', fontSize:25,fontColor:'#FFFFE0'},
+			title:{display:true, text:'Revenue 'new Date().getFullYear(), fontSize:25,fontColor:'#FFFFE0'},
 			legend:{
 				display:true, position:'bottom',
 				labels:{fontColor:'#FFFFE0'}
