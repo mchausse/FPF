@@ -355,6 +355,16 @@ class DepenseDAO{
 			return $resultat;
 		}catch(PDOException $e){throw $e;}
 	}
+	public function findTotalDepenseMoisCat($compte,$cat,$mois){
+		try{
+			$db=Database::getInstance();
+			$r="SELECT SUM(montantDepense) as montantTot FROM depense WHERE idCompte='".$compte."' and idCategorie='".$cat."' and MONTH(dateDepense)='".$mois."'";
+			$resultat=$db->query($r);
+			$db=null;
+			return $resultat;
+		}catch(PDOException $e){throw $e;}
+	}
+	
 	public static function getPageRecherche($idCompte,$numPage,$taillePage,$parametre,$recherche){
 		try {
 			$liste = new Liste();

@@ -1,122 +1,133 @@
-
-#all { 
-    margin : auto;
-    /*width : 800px;
+#all {
+  margin: auto;
+  /*width : 800px;
     background-color:bisque;*/
 }
 
 #content {
-	/* Empeche le bootstrap
+  /* Empeche le bootstrap
 	margin : 50px 0 50px 200px;*/
 }
 /*
 V5
 */
-#nav-bar{
-margin:0px;
+#nav-bar {
+  margin: 0px;
 }
-li a:hover{
-	color : white;
+li a:hover {
+  color: white;
 }
-body{
-	background-repeat: no-repeat;
-    background-size: 100%;
-	background-attachment: fixed;
-    background-size: cover;
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
 }
 #footer {
-   bottom:0;
-   width:100%;
-   height:40px;
-   background-color:#1e1f21;
-   color:white;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #1e1f21;
+  color: white;
 }
 
 #loginForm {
-	border-width : 1px;
-	border-style : solid;
-	min-width : 330px;
-	max-width : 400px;
-	text-align : left;
-	padding : 10px;
-	margin-top:35px;
-	background-color : #eee;
+  border-width: 1px;
+  border-style: solid;
+  min-width: 330px;
+  max-width: 400px;
+  text-align: left;
+  padding: 10px;
+  margin-top: 35px;
+  background-color: #eee;
 }
 .warningMessage {
-	color : red;
+  color: red;
 }
 /* ==================== */
 /* ----- inscrire ----- */
-#inscrireForm{
-	background-color : #eee;
-	border-width : 1px;
-	border-style : solid;
-	text-align : left;
-	margin-top:35px;
-	padding : 10px;
-	min-width: 380px;
-	max-width: 550px;
+#inscrireForm {
+  background-color: #eee;
+  border-width: 1px;
+  border-style: solid;
+  text-align: left;
+  margin-top: 35px;
+  padding: 10px;
+  min-width: 380px;
+  max-width: 550px;
 }
 /* ==================== */
 /* ----- depenses ----- */
-#depenseForm, #categorieForm{
-	z-index:1;
-	text-align : left;
+#depenseForm,
+#categorieForm {
+  z-index: 1;
+  text-align: left;
 }
-#paneauAjout{
-	height: 35px;
-	color:black;
+#paneauAjout {
+  height: 35px;
+  color: black;
 }
-#paneauSettings{
-	vertical-align:middle;
-	height: 21px;
-	color:black;
+#paneauSettings {
+  vertical-align: middle;
+  height: 21px;
+  color: black;
 }
-#notificationSuppressionCategorie .panel-heading{
-	height: 80px;
+#notificationSuppressionCategorie .panel-heading {
+  height: 80px;
 }
-.infoTableau h3{
-	margin-top:-4px;
+.infoTableau h3 {
+  margin-top: -4px;
 }
-.infoPanel h3{
-	margin-top:-4px;
+.infoPanel h3 {
+  margin-top: -4px;
 }
-.panel-heading{
-	height:50px;
+.panel-heading {
+  height: 50px;
 }
-.numeroPages a{
-	text-align: center;
-	font-style: bold;
+.numeroPages a {
+  text-align: center;
+  font-style: bold;
 }
-#images img{
-	margin: 15px;
+#images img {
+  margin: 15px;
 }
-.img{
-	background-color:white;
+.img {
+  background-color: white;
 }
-#notificationSuppressionDepense,#notificationSuppressionRevenue{
-	font-size: 18px;
+#notificationSuppressionDepense,
+#notificationSuppressionRevenue {
+  font-size: 18px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 /* ============================================================ */
 /* -------------------- Themes des utilisateurs -------------------- */
-#theme1{
-	background-image: url(./images/banner.jpeg);
+#theme1 {
+  background-image: url(./images/banner.jpeg);
 }
-#theme2{
-	background-image: url(./images/bateau.jpg);
+#theme2 {
+  background-image: url(./images/bateau.jpg);
 }
-#theme3{
-	background-image: url(./images/ciel.jpg);
+#theme3 {
+  background-image: url(./images/ciel.jpg);
 }
-#theme4{
-	background-image: url(./images/ville.jpg);
+#theme4 {
+  background-image: url(./images/ville.jpg);
 }
-#theme5{
-	background-image: url(./images/fleurs.jpg);
+#theme5 {
+  background-image: url(./images/fleurs.jpg);
 }
-#theme6{
-	background-image: url(./images/tropic.jpg);
+#theme6 {
+  background-image: url(./images/tropic.jpg);
 }
-#theme2 h2,#theme3 h2,#theme4 h2{
-	color:#fff;
+#theme2 h2,
+#theme3 h2,
+#theme4 h2 {
+  color: #fff;
 }
