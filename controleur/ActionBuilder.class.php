@@ -29,95 +29,94 @@ require_once('./controleur/ChangerBackgroundAction.class.php');
 require_once('./controleur/BudgetConfigurationAction.class.php');
 
 class ActionBuilder{
-	public static function getAction($nomAction){
-		switch ($nomAction){
-			case "connecter" :
-				return new LoginAction();
-				break;
-			case "deconnecter" :
-				return new LogoutAction();
-				break;
-			case "afficher" :
-				return new AfficherAction();
-				break;
-			case "inscrire" :
-				return new InscrireAction();
-				break;
-			case "inscription" :
-				return new InscriptionAction();
-				break;
-			case "accueil" :
-				return new DefaultAction();
-				break;
-			case "depenses" :
-				return new DepensesAction();
-				break;
-			case "revenues" :
-				return new RevenuesAction();
-				break;
-			case "budget" :
-				return new BudgetAction();
-				break;
-			case "compte" :
-				return new CompteAction();
-				break;
-			case "ajoutDepense" :
-				return new AjoutDepenseAction();
-				break;
-			case "ajoutCategorie" :
-				return new AjoutCategorieAction();
-				break;
-			case "afficherDepenses" :
-				return new AfficherDepensesAction();
-				break;
-			case "supprimerDepense" :
-				return new SupprimerDepenseAction();
-				break;
-			case "modifierDepense" :
-				return new ModifierDepenseAction();
-				break;
-			case "modifierCompte" :
-				return new ModifierCompteAction();
-				break;
-			case "rechercheDepense" :
-				return new RechercheDepenseAction();
-				break;
-			case "supprimerCategorie" :
-				return new SupprimerCategorieAction();
-				break;
-			case "modifierCategorie" :
-				return new ModifierCategorieAction();
-				break;
-			case "sauvegarderCategorie" :
-				return new SauvegarderCategorieAction();
-				break;
-			case "sauvegarderDepense" :
-				return new SauvegarderDepenseAction();
-				break;
-			case "ajoutRevenue" :
-				return new AjoutRevenueAction();
-				break;
-			case "modifierRevenue" :
-				return new ModifierRevenueAction();
-				break;
-			case "sauvegarderRevenue" :
-				return new SauvegarderRevenueAction();
-				break;
-			case "supprimerRevenue" :
-				return new SupprimerRevenueAction();
-				break;
-			case "rembourserDepense" :
-				return new RembourserDepenseAction();
-				break;
-			case "changerBackground" :
-				return new ChangerBackgroundAction();
-				break;
-			case "budgetConfiguration" :
-				return new BudgetConfigurationAction();
-				break;
-			default :
-				return new DefaultAction();
-		}
-	}
+    public static function getAction($nomAction){
+        switch ($nomAction){
+            case "connecter" :
+                return new LoginAction();
+                    break;
+            case "deconnecter" :
+                    return new LogoutAction();
+                    break;
+            case "afficher" :
+                    return new AfficherAction();
+                    break;
+            case "inscrire" :
+                    return new InscrireAction();
+                    break;
+            case "inscription" :
+                    return new InscriptionAction();
+                    break;
+            case "accueil" :
+                    return new DefaultAction();
+                    break;
+            case "depenses" :
+                    return new DepensesAction();
+                    break;
+            case "revenues" :
+                    return new RevenuesAction();
+                    break;
+            case "budget" :
+                    return new BudgetAction();
+                    break;
+            case "compte" :
+                    return new CompteAction();
+                    break;
+            case "ajoutDepense" :
+                    return new AjoutDepenseAction();
+                    break;
+            case "ajoutCategorie" :
+                    return new AjoutCategorieAction();
+                    break;
+            case "afficherDepenses" :
+                    return new AfficherDepensesAction();
+                    break;
+            case "supprimerDepense" :
+                    return new SupprimerDepenseAction();
+                    break;
+            case "modifierDepense" :
+                    return new ModifierDepenseAction();
+                    break;
+            case "modifierCompte" :
+                    return new ModifierCompteAction();
+                    break;
+            case "rechercheDepense" :
+                    return new RechercheDepenseAction();
+                    break;
+            case "supprimerCategorie" :
+                    return new SupprimerCategorieAction();
+                    break;
+            case "modifierCategorie" :
+                    return new ModifierCategorieAction();
+                    break;
+            case "sauvegarderCategorie" :
+                    return new SauvegarderCategorieAction();
+                    break;
+            case "sauvegarderDepense" :
+                    return new SauvegarderDepenseAction();
+                    break;
+            case "ajoutRevenue" :
+                    return new AjoutRevenueAction();
+                    break;
+            case "modifierRevenue" :
+                    return new ModifierRevenueAction();
+                    break;
+            case "sauvegarderRevenue" :
+                    return new SauvegarderRevenueAction();
+                    break;
+            case "supprimerRevenue" :
+                    return new SupprimerRevenueAction();
+                    break;
+            case "rembourserDepense" :
+                    return new RembourserDepenseAction();
+                    break;
+            case "changerBackground" :
+                    return new ChangerBackgroundAction();
+                    break;
+            case "budgetConfiguration" :
+                    return new BudgetConfigurationAction();
+                    break;
+            default :
+                    return new DefaultAction();
+        }
+    }
 }
-?>
