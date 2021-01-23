@@ -1,5 +1,5 @@
 <?php
-require_once('./controleur/Action.interface.php');
+require_once('../controleur/Action.interface.php');
 class SauvegarderDepenseAction implements Action {
 	public function execute(){
 		if($_REQUEST["montant"]=="") return "depenses";

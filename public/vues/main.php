@@ -6,11 +6,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="./css/css.css" type="text/css" />
+		<link rel="stylesheet" href="../css/css.css" type="text/css" />
 	</head>
 	<?php
 	// Utiliser la bonne image de font
-		require_once('./modele/CompteDAO.class.php');
+		require_once('../modele/CompteDAO.class.php');
 		$cDao=new CompteDAO();
 		$background="theme1";
 		if (!ISSET($_SESSION)) session_start();
@@ -75,5 +75,14 @@
 				</div>
 			</div>
 		</div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.2.4/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 // -- Contrôleur frontal --
-require_once('/controleur/ActionBuilder.class.php');
+require_once('../controleur/ActionBuilder.class.php');
 if (ISSET($_REQUEST["action"]))
 	{
 		$vue = ActionBuilder::getAction($_REQUEST["action"])->execute();
@@ -11,5 +11,5 @@ else
 		$vue = $action->execute();
 	}
 // On affiche la page (vue)
-include_once('vues/main.php');
+include_once('./vues/main.php');
 ?>

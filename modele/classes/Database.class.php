@@ -7,7 +7,7 @@
  * @date : 07.03.2018
  * ================================
  */
-require_once('./modele/config/config.php');
+require_once('../modele/config/config.php');
 class Database {
     // ---------- Variables ----------
     private static $instance = NULL;

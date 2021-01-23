@@ -1,5 +1,5 @@
 <?php
-require_once('./controleur/Action.interface.php');
+require_once('../controleur/Action.interface.php');
 class SauvegarderRevenueAction implements Action {
 	public function execute(){
 		if(!$this->valide())return "revenues";

@@ -1,13 +1,13 @@
 <?php
-require_once('./controleur/Action.interface.php');
+require_once('../controleur/Action.interface.php');
 class InscriptionAction implements Action {
 	public function execute(){
 		if($_REQUEST["adresse"]=="") return "inscrire";
 		if(!$this->valide())return "inscrire";
-		require_once('./modele/CompteDao.class.php');
-		require_once('./modele/CategorieDao.class.php');
-		require_once('./modele/classes/Compte.class.php');
-		require_once('./modele/classes/Categorie.class.php');
+		require_once('../modele/CompteDao.class.php');
+		require_once('../modele/CategorieDao.class.php');
+		require_once('../modele/classes/Compte.class.php');
+		require_once('../modele/classes/Categorie.class.php');
 		$cDao=new CompteDao();
 		$catDao=new CategorieDao();
 		$compte=new Compte();

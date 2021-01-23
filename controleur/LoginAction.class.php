@@ -1,5 +1,5 @@
 <?php
-require_once('./controleur/Action.interface.php');
+require_once('../controleur/Action.interface.php');
 class LoginAction implements Action {
 	public function execute(){
 		if (!ISSET($_REQUEST["adresse"]))
